@@ -19,9 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: "main"
+          ref: "master"
           repository: dbhao/github_action_test_2
-          token: ${{ secrets.PAT }}
           fetch-depth: 0
           submodules: recursive
 
