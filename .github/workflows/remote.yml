@@ -27,7 +27,7 @@ jobs:
 
   finish-child:
     runs-on: ubuntu-latest
-    needs: [ always-fail ]
+    needs: [ do-job ]
     if: ${{ always() }}
     steps:
       - run: |
